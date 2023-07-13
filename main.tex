@@ -1,0 +1,90 @@
+\documentclass[fleqn]{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage[a2paper, total={11in, 13in}]{geometry}
+\usepackage{color}
+\usepackage{amsmath}
+
+\counterwithin*{equation}{section}
+\title{manual translation}
+\author{Peter Burbery}
+\date{June 2023}
+
+\newcommand{\Whyp}[5]{\,\mbox{}_{#1}W_{#2}\!\left({#3};{#4};{#5}\right)}
+
+\newcommand{\qhyp}[5]{\,\mbox{}_{#1}\phi_{#2}\!\left(
+\begin{array}{c}{#3}\\[0.10cm]{#4}\end{array};{#5}\right)}
+\newcommand{\qphyp}[6]{\,{}_{#1}\phi_{{#2}}^{{#3}}\!\left(
+\begin{array}{c}{#4}\\[0.10cm] {#5}\end{array};#6\right)}
+\newcommand{\qPhihyp}[5]{\Phi{}_{#1}^{#2}\!\left[
+\begin{array}{c}{#3}\\ {#4}\end{array};#5\right]}
+\newcommand{\Kampe}[5]{F_{#1}^{#2}\!\left[
+\begin{array}{c}{#3}\\ {#4}\end{array};#5\right]}
+\newcommand{\hyp}[5]{\,\mbox{}_{#1}F_{#2}\!\left(
+\begin{array}{c}{#3}\\ {#4}\end{array};#5\right)}
+
+
+\newcommand\moro[1]{{\textcolor{blue}{#1}}}
+\newcommand\moqo[1]{{\textcolor{green!55!black}{#1}}}
+\newcommand\soro[1]{{\textcolor{red!40!blue}{\sout #1}}}
+\newcommand\noro[1]{{\textcolor{red}{#1}}}
+\newcommand\poro[1]{{\textcolor{purple}{#1}}}
+\newcommand\doro[1]{{\textcolor{darkgray}{#1}}}
+\newcommand\boro[1]{{\textcolor{black}{#1}}}
+
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+\section{equation 1}
+\begin{flalign}
+&\Whyp{6}{5}{a}{b,c,d}{q,z}=\frac{\left(q,{\big(\frac{bcdz}{qa}\big)}^2,qa,\frac{(qa)^{3/2}}{bcd};q\right)_{\infty}}{2 \pi  \left(f,\frac{q}{f},\frac{(qa)^{3/2}f}{bcdz},\frac{qbcdz}{(qa)^{3/2}f},\frac{(bcdz)^2}{qa^2},\frac{qa}{d},\frac{q^{3/2}a^{3/2}}{bc};q\right)_{\infty}} 
+\nonumber && \\
+& \times\sum_{j=0}^{\infty }q^{\frac{1}{2} (j-1)j}\left(-\frac{qaf}{d}\right)^j\frac{\left(\frac{q^{3/2}a^{3/2}}{bc};q\right)_{2 j}\left(\frac{\sqrt{q}a^{3/2}}{bc},\frac{\sqrt{qa}}{b},\frac{\sqrt{qa}}{c},\frac{qa}{bc},d;q\right)_{j}}{\left(\frac{\sqrt{q}a^{3/2}}{bc};q\right)_{2 j}\left(q,\frac{qa}{b},\frac{qa}{c},\sqrt{qa},\frac{(qa)^{3/2}}{bcd};q\right)_{j}}
+\nonumber && \\
+&\times\int _{-\pi }^{\pi }\frac{\left(\frac{q^{\frac{3}{4}+\frac{j}{2}}f\rho \sqrt{\frac{a^{3/2}}{bcdz}}}{g},\frac{q^{-\frac{j}{2}+\frac{1}{4}}\rho\sqrt{\frac{bcdz}{a^{3/2}}}}{fg},\frac{q^{\frac{j}{2}+\frac{3}{4}}fg\sqrt{\frac{a^{3/2}}{bcdz}}}{\rho},\frac{q^{-\frac{j}{2}+\frac{1}{4}}g\sqrt{\frac{bcdz}{a^{3/2}}}}{f\rho },\frac{q^{\frac{j}{2}+\frac{1}{4}}g\sqrt{\frac{\sqrt{a}bcz}{d}}}{\rho},\frac{q^{\frac{j}{2}-\frac{1}{4}}g(bcdz)^{3/2}}{a^{5/4}\rho },\frac{q^{\frac{3j}{2}+\frac{3}{4}}g\sqrt{\frac{a^{3/2}dz}{bc}}}{\rho };q\right)_{\infty}}{\left(\frac{q^{\frac{j}{2}+\frac{3}{4}}\rho \sqrt{\frac{a^{3/2}}{bcdz}}}{g},\frac{\rho\sqrt{\frac{bcdz}{a^{3/2}}}}{q^{\frac{j}{2}+\frac{3}{4}}g},\frac{q^{\frac{j}{2}+\frac{1}{4}}g\sqrt{bcdz}}{a^{1/4}\rho},\pm \frac{q^{\frac{j}{2}-\frac{1}{4}}g\sqrt{bcdz}}{a^{1/4}\rho },-\frac{q^{\frac{j}{2}+\frac{1}{4}}g\sqrt{bcdz}}{a^{1/4}\rho},\frac{q^{\frac{j}{2}+\frac{3}{4}}g\sqrt{\frac{a^{3/2}z}{bcd}}}{\rho };q\right)_{\infty}} \,{\mathrm d}\zeta &&
+\end{flalign}
+
+\section{equation 2}
+\begin{flalign}
+&\Whyp{8}{7}{a}{b,c,d,e,f}{q,z}=\sum_{n=0}^{\infty }\left(\frac{bcz}{\sqrt{qa}}\right)^n\frac{\left(qa;q\right)_{2 n}\left(\frac{\sqrt{q}a^{3/2}}{bc},\frac{\sqrt{qa}}{b},\frac{\sqrt{qa}}{c},\frac{qa}{bc},d,e,f;q\right)_{n}
+}{\left(\frac{\sqrt{q}a^{3/2}}{bc};q\right)_{2 n}\left(q,\sqrt{qa},\frac{qa}{b},\frac{qa}{c},\frac{qa}{d},\frac{qa}{e},\frac{qa}{f};q\right)_{n}}
+\nonumber && \\
+& \times \Whyp{7}{6}{q^{2 n}a}{\frac{bc}{\sqrt{qa}},q^nd,q^ne,q^nf}{q,z} &&
+\end{flalign}
+
+
+\section{equation 3}
+
+\begin{flalign}
+&\Whyp{8}{7}{a}{b,c,d,e,f}{q,z}=\sum_{n=0}^{\infty }\left(\frac{bcz}{\sqrt{qa}}\right)^n\frac{\left(qa;q\right)_{2 n}\left(\frac{\sqrt{q}a^{3/2}}{bc},\frac{\sqrt{qa}}{b},\frac{\sqrt{qa}}{c},\frac{qa}{bc},d,e,f;q\right)_{n}}{\left(\frac{\sqrt{q}a^{3/2}}{bc};q\right)_{2 n}\left(q,\sqrt{qa},\frac{qa}{b},\frac{qa}{c},\frac{qa}{d},\frac{qa}{e},\frac{qa}{f};q\right)_{n}} 
+\nonumber && \\
+& \times
+\sum_{m=0}^{\infty }\left(\frac{bcdz}{qa}\right)^m\frac{\left(q^{2 n+1}a;q\right)_{2 m}\left(\frac{q^{2 n+1}a^2}{bcd},\frac{q^{n+1}a}{bc},\frac{\sqrt{qa}}{d},\frac{q^n(qa)^{3/2}}{bcd},q^ne,q^nf;q\right)_{m}}{\left(\frac{q^{2n+1}a^2}{bcd};q\right)_{2 m}\left(q,q^n\sqrt{qa},\frac{q^{2 n}(qa)^{3/2}}{bc},\frac{q^{n+1}a}{d},\frac{q^{n+1}a}{e},\frac{q^{n+1}a}{f};q\right)_{m}}
+\nonumber && \\
+&\times
+\Whyp{6}{5}{q^{2 (m+n)}a}{\frac{bcd}{qa},q^{m+n}e,q^{m+n}f}{q,z} &&
+\end{flalign}
+
+\section{equation 4}
+\begin{flalign}
+&\Whyp{8}{7}{a}{b,c,d,e,f}{q,z}=\frac{\left(q,\frac{b^2c^2d^2e^2f^2z^2}{q^4a^4};q\right)_{\infty}}{2\pi \left(f,\frac{q}{f},\frac{b^2c^2d^2e^2f^2z^2}{q^3a^4};q\right)_{\infty}}\sum_{n=0}^{\infty }\left(\frac{bcz}{\sqrt{qa}}\right)^n\frac{\left(qa;q\right)_{2 n}\left(\frac{\sqrt{q}a^{3/2}}{bc},\frac{\sqrt{qa}}{b},\frac{\sqrt{qa}}{c},\frac{qa}{bc},d,e,f;q\right)_{n}}{\left(\frac{\sqrt{q}a^{3/2}}{bc};q\right)_{2 n}\left(q,\sqrt{qa},\frac{qa}{b},\frac{qa}{c},\frac{qa}{d},\frac{qa}{e},\frac{qa}{f};q\right)_{n}}\nonumber && \\
+&\times \sum_{m=0}^{\infty }\left(\frac{bcdz}{qa}\right)^m\frac{\left(q^{2 n+1}a;q\right)_{2 m}\left(\frac{q^{2 n+1}a^2}{bcd},\frac{q^{n+1}a}{bc},\frac{\sqrt{qa}}{d},\frac{q^n(qa)^{3/2}}{bcd},q^ne,q^nf;q\right)_{m}\left(q^{2 (m+n)+1}a,\frac{q^{m+n}(qa)^{5/2}}{bcdef};q\right)_{\infty}}{\left(\frac{q^{2 n+1}a^2}{bcd};q\right)_{2 m}\left(q,q^n\sqrt{qa},\frac{q^{2 n}(qa)^{3/2}}{bc},\frac{q^{n+1}a}{d},\frac{q^{n+1}a}{e},\frac{q^{n+1}a}{f};q\right)_{m}\left(\frac{q^{m+n}(qa)^{5/2}}{bcdez},\frac{bcdez}{q^{m+n+\frac{3}{2}}a^{5/2}},\frac{q^{m+n+1}a}{f},\frac{q^{2(m+n)}(qa)^{5/2}}{bcde};q\right)_{\infty}}
+\nonumber && \\
+&\times \sum_{j=0}^{\infty }q^{\frac{1}{2} (j-1)j}\left(-q^{m+n+1}a\right)^j\frac{\left(\frac{q^{2 (m+n)}(qa)^{5/2}}{bcde};q\right)_{2 j}\left(\frac{q^{m+2 n+\frac{3}{2}}a^{5/2}}{bcde},\frac{q^{m+n}(qa)^{3/2}}{bcd},\frac{\sqrt{qa}}{e},\frac{q^{m+n+2}a^2}{bcde},q^{m+n}f;q\right)_{j}}{\left(\frac{q^{2 m+2 n+\frac{3}{2}}a^{5/2}}{bcde};q\right)_{2 j}\left(q,\frac{q^{2 (m+n+1)}a^2}{bcd},\frac{q^{m+n+1}a}{e},\sqrt{q^{2 (m+n)+1}a},\frac{q^{m+n}(qa)^{5/2}}{bcdef};q\right)_{j}}
+\nonumber && \\
+&\times  \int _{-\pi }^{\pi }\frac{\left(\frac{q^{\frac{1}{4} (2 j+2 m+2 n+5)}a^{5/4}\sqrt{f}\rho }{g\sqrt{bcdez}},\frac{\rho\sqrt{bcdez}}{q^{\frac{1}{4} (1+2 j+2 m+2 n)}a^{5/4}\sqrt{f}g},\frac{q^{\frac{1}{4}(2 j+2 m+2 n+5)}a^{5/4}\sqrt{f}g}{\rho \sqrt{bcdez}},\frac{g\sqrt{bcdez}}{q^{\frac{1}{4}(2 j+2 m+2+-1 n)}a^{5/4}\sqrt{f}\rho },\frac{q^{\frac{1}{4} (2 j+2 m+2 n-1)}g\sqrt{bcdez}}{a^{1/4}\sqrt{f}\rho},\frac{q^{\frac{1}{4} (2 j+2 m+2 n-7)}g(bcdefz)^{3/2}}{a^{11/4}\rho },\frac{q^{\frac{1}{4}(6 j+6 m+6 n+5)}a^{5/4}g\sqrt{fz}}{\rho \sqrt{bcde}};q\right)_{\infty}}{\left(\frac{q^{\frac{1}{4} (2 j+2 m+2 n+5)}a^{5/4}\rho }{g\sqrt{bcdefz}},\frac{\rho\sqrt{bcdefz}}{q^{\frac{1}{4} (5+2 j+2 m+2 n)}a^{5/4}g},\frac{q^{\frac{1}{4}(2 j+2 m+2 n-1)}g\sqrt{bcdefz}}{a^{3/4}\rho },\pm \frac{q^{\frac{1}{4} (2j+2 m+2 n-3)}g\sqrt{bcdefz}}{a^{3/4}\rho },-\frac{q^{\frac{1}{4} (2 j+2m+2 n-1)}g\sqrt{bcdefz}}{a^{3/4}\rho },\frac{q^{\frac{1}{4} (2 j+2 m+2 n+5)}a^{5/4}g\sqrt{z}}{\rho\sqrt{bcdef}};q\right)_{\infty}}\,{\mathrm d}\zeta&&
+\end{flalign}
+\section{equation 5}
+\begin{flalign}
+&\Whyp{12}{11}{a}{b,c,d,e,f,g,h,i,j}{q,z}=\qhyp{12}{11}{a,\pm q\sqrt{a},b,c,d,e,f,g,h,i,j}{\pm \sqrt{a},\frac{qa}{b},\frac{qa}{c},\frac{qa}{d},\frac{qa}{e},\frac{qa}{f},\frac{qa}{g},\frac{qa}{h},\frac{qa}{i},\frac{qa}{j}}{q,z}
+&&
+\end{flalign}
+
+\end{document}
+
+
+
+
