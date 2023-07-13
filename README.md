@@ -1,2 +1,2 @@
 # nist-surf-2023
-This is for an internship at the U.S. Department of Commerce's NIST SURF 2023 Program. SURF stands for Summer Undergraduate Research Fellowship. NIST stands for National Institute of Standards and Technology. My advisor is Dr. Howard Cohl.
+This is for an internship at the U.S. Department of Commerce's NIST SURF 2023 Program. SURF stands for Summer Undergraduate Research Fellowship. NIST stands for National Institute of Standards and Technology. My advisor is Howard Cohl Ph.D., Ph.D. He wants me to work on basic hypergeometric series. I have to do stuff with LaTeX. I will be using Overleaf with the premium feature GitHub integration. I will be using the Wolfram Language and Mathematica 13.3.
