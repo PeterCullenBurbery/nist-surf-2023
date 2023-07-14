@@ -1,0 +1,63 @@
+\documentclass[fleqn]{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage[a3paper]{geometry}
+\usepackage{color}
+\usepackage{amsmath}
+
+\counterwithin*{equation}{section}
+\title{manual translation}
+\author{Peter Burbery}
+\date{June 2023}
+
+\newcommand{\Whyp}[5]{\,\mbox{}_{#1}W_{#2}\!\left({#3};{#4};{#5}\right)}
+
+\newcommand{\qhyp}[5]{\,\mbox{}_{#1}\phi_{#2}\!\left(
+\begin{array}{c}{#3}\\[0.10cm]{#4}\end{array};{#5}\right)}
+\newcommand{\qphyp}[6]{\,{}_{#1}\phi_{{#2}}^{{#3}}\!\left(
+\begin{array}{c}{#4}\\[0.10cm] {#5}\end{array};#6\right)}
+\newcommand{\qPhihyp}[5]{\Phi{}_{#1}^{#2}\!\left[
+\begin{array}{c}{#3}\\ {#4}\end{array};#5\right]}
+\newcommand{\Kampe}[5]{F_{#1}^{#2}\!\left[
+\begin{array}{c}{#3}\\ {#4}\end{array};#5\right]}
+\newcommand{\hyp}[5]{\,\mbox{}_{#1}F_{#2}\!\left(
+\begin{array}{c}{#3}\\ {#4}\end{array};#5\right)}
+
+
+\newcommand\moro[1]{{\textcolor{blue}{#1}}}
+\newcommand\moqo[1]{{\textcolor{green!55!black}{#1}}}
+\newcommand\soro[1]{{\textcolor{red!40!blue}{\sout #1}}}
+\newcommand\noro[1]{{\textcolor{red}{#1}}}
+\newcommand\poro[1]{{\textcolor{purple}{#1}}}
+\newcommand\doro[1]{{\textcolor{darkgray}{#1}}}
+\newcommand\boro[1]{{\textcolor{black}{#1}}}
+
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+
+\section{equation 3}
+\begin{flalign}
+&\Whyp{8}{7}{a}{b,c,d,e,f}{q,z}=\sum_{n=0}^{\infty }q^{-\frac{n}{2}}\left(\frac{b c z}{\sqrt{a}}\right)^n
+ \frac{\left(q a;q\right)_{2 n}\left(\sqrt{q}\frac{a^{3/2}}{b c},\sqrt{q}\frac{\sqrt{a}}{b},\sqrt{q}\frac{\sqrt{a}}{c},q \frac{a}{b c},d,e,f;q\right)_{n}}{\left(\sqrt{q}\frac{a^{3/2}}{b c};q\right)_{2 n}\left(q,\sqrt{q a},q \frac{a}{b},q \frac{a}{c},q \frac{a}{d},q \frac{a}{e},q \frac{a}{f};q\right)_{n}} 
+\nonumber && \\
+& \times
+\sum_{m=0}^{\infty }q^{-m}\left(\frac{b c dz}{ a}\right)^m\frac{\left(q^{2 n+1}a;q\right)_{2 m}\left(q^{2 n+1}\frac{a^2}{b c d},q^{n+1}\frac{a}{b c},\sqrt{q}\frac{\sqrt{a}}{d},\frac{q^n(q a)^{3/2}}{b c d},q^n e,q^n f;q\right)_{m}}{\left(\frac{q^{2n+1}a^2}{b c d};q\right)_{2 m}\left(q,q^n\sqrt{q a},\frac{q^{2 n}(q a)^{3/2}}{b c},q^{n+1}\frac{a}{d},q^{n+1}\frac{a}{e},q^{n+1}\frac{a}{f};q\right)_{m}}
+\nonumber && \\
+&\times
+\Whyp{6}{5}{q^{2 (m+n)}a}{\frac{b c d}{q a},q^{m+n}e,q^{m+n}f}{q,z} &&
+\end{flalign}
+\section{fraction}
+\begin{flalign}
+    \frac{q^n(q a)^{3/2}}{b c d}
+\end{flalign}
+
+
+\end{document}
+
+
+
+
