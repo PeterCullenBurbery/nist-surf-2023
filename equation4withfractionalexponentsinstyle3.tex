@@ -3,7 +3,7 @@
 \usepackage[a3paper]{geometry}
 \usepackage{color}
 \usepackage{amsmath}
-
+\usepackage{ amssymb}
 \counterwithin*{equation}{section}
 \title{manual translation}
 \author{Peter Burbery}
@@ -30,6 +30,31 @@
 \newcommand\poro[1]{{\textcolor{purple}{#1}}}
 \newcommand\doro[1]{{\textcolor{darkgray}{#1}}}
 \newcommand\boro[1]{{\textcolor{black}{#1}}}
+
+\newcommand{\A}{\ensuremath{\mathbb{A}}}
+\newcommand{\B}{\ensuremath{\mathbb{B}}}
+\newcommand{\C}{\ensuremath{\mathbb{C}}}
+\newcommand{\D}{\ensuremath{\mathbb{D}}}
+\newcommand{\E}{\ensuremath{\mathbb{E}}}
+\newcommand{\F}{\ensuremath{\mathbb{F}}}
+\newcommand{\G}{\ensuremath{\mathbb{G}}}
+\newcommand{\HH}{\ensuremath{\mathbb{H}}}
+\newcommand{\I}{\ensuremath{\mathbb{I}}}
+\newcommand{\J}{\ensuremath{\mathbb{J}}}
+\newcommand{\K}{\ensuremath{\mathbb{K}}}
+\newcommand{\LL}{\ensuremath{\mathbb{L}}}
+\newcommand{\M}{\ensuremath{\mathbb{M}}}
+\newcommand{\N}{\ensuremath{\mathbb{N}}}
+\newcommand{\OO}{\ensuremath{\mathbb{O}}}
+\newcommand{\PP}{\ensuremath{\mathbb{P}}}
+\newcommand{\Q}{\ensuremath{\mathbb{Q}}}
+\newcommand{\R}{\ensuremath{\mathbb{R}}}
+\newcommand{\SSS}{\ensuremath{\mathbb{S}}}
+\newcommand{\T}{\ensuremath{\mathbb{T}}}
+\newcommand{\U}{\ensuremath{\mathbb{U}}}
+\newcommand{\V}{\ensuremath{\mathbb{V}}}
+\newcommand{\W}{\ensuremath{\mathbb{W}}}
+\newcommand{\X}{\ensuremath{\mathbb{X}}}
 
 
 \begin{document}
@@ -59,11 +84,46 @@
 \int_{-\pi}^{\pi}
 \frac{\left(
 q^{\frac{2j+2m+2n+5}{4}}\frac{ a^{5/4} \sqrt{f} \rho }{g \sqrt{b c d e z}}, 
-q^{\frac{2j+2m+2n+1}{4}} \frac{\rho \sqrt{b c d e z}}{a^{5/4} \sqrt{f} g};q
+q^{\frac{-\left(2j+2m+2n+1\right)}{4}} \frac{\rho \sqrt{b c d e z}}{a^{5/4} \sqrt{f} g}
+, q^{\frac{2j+2m+2n+5}{4}} \frac{a^{\frac{5}{4}} \sqrt{f } g }{\rho \sqrt{b c d e z}}
+;q
 \right)_{\infty}}{\left( \right)_{\infty}}
 \,{\mathrm d}\zeta
   && 
 \end{flalign}
+
+\section{simplified form of equation 4}
+
+\begin{flalign}
+\W=\frac{\U}{2\pi\V} \sum_{n=0}^{\infty}{\PP^n \frac{\Q \R}{\SSS \T}} \sum_{m=0}^{\infty} \A^m \frac{\B \C \D}{\E \F \G} \sum_{j=0}^{\infty} q^{\HH} \frac{ \I^j \J \K}{\LL \M} \int_{-\pi}^{\pi} \frac{\N}{\OO} \,{\mathrm d}\zeta
+\end{flalign}
+
+\begin{flalign}
+    \W=\Whyp{8}{7}{a}{b,c,d,e,f}{q,z}
+
+    \U=
+\end{flalign}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 \end{document}
 
