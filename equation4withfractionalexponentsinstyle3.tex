@@ -4,7 +4,7 @@
 \usepackage{color}
 \usepackage{amsmath}
 \usepackage{ amssymb}
-\counterwithin*{equation}{section}
+\counterwithin*{equation}{subsection}
 \title{manual translation}
 \author{Peter Burbery}
 \date{June 2023}
@@ -110,7 +110,7 @@
 \newcommand{\goX}{\ensuremath{\mathfrak{X}}}
 \newcommand{\goY}{\ensuremath{\mathfrak{Y}}}
 \newcommand{\goZ}{\ensuremath{\mathfrak{Z}}}
-
+\setcounter{tocdepth}{4}
 \usepackage{marvosym}
 
 \begin{document}
@@ -459,18 +459,133 @@ This is what we will be defining.
 \end{split}
 \end{flalign}
 
-\subsubsection{\dsI}
+\subsubsection{\dsI section}
+
+
+\begin{flalign} 
+\begin{split}
+  \dsI & = \left(-q^{m+n+1} a\right)^j    \\
+    & =  \left(-1\right)^j \left(q^{m+n+1}\right)^j a^j  \\
+     & =  \left(q^{m+n+1}\right)^j \left(-1\right)^j  a^j \\
+      & =  \left(q^{m+n+1}\right)^j \left(-a\right)^j  \\
+     &= q^{\left( m+n+1\right)\times j} \left(-a\right)^j \\
+       &= q^{j m+j n+j} \left(-a\right)^j
+\end{split}
+\end{flalign}
+
+\subsubsection{\dsJ}
 
 \begin{flalign}
-    \dsI
+    \dsJ=\left(\goB ;q\right)_{2j}
 \end{flalign}
+
+\begin{flalign}
+    \goB=\frac{\goC}{b c d e}
+\end{flalign}
+
+\begin{flalign} 
+\begin{split}
+  \goC & = q^{2\left(m+n\right)} \left(q a\right)^{\frac{5}{2}}    \\
+    & = q^{2m+2n} q^{\frac{5}{2}} a^{\frac{5}{2}}   \\
+     & =   q^{2m+2n+\frac{5}{2}} a^{\frac{5}{2}}  \\
+      & =   q^{\frac{4m+4n+5}{2}} a^{\frac{5}{2}}  
+\end{split}
+\end{flalign}
+
+\subsubsection{\dsK}
+\begin{flalign}
+    \dsK=\left( \goD,\goE,\goF,\goG,q^{m+n} f;q\right)_j
+\end{flalign}
+
+\begin{flalign}
+    \goD=\frac{\goH}{b c d e}
+\end{flalign}
+
+
+\begin{flalign}
+\begin{split}
+    \goH & =q^{m+2n+\frac{3}{2}}a^{\frac{5}{2}} \\
+    & = q^{\frac{2m+4n+3}{2}} a^{\frac{5}{2}}
+\end{split}
+\end{flalign}
+
+\begin{flalign}
+    \goE=\frac{\goI}{b c d}
+\end{flalign}
+
+\begin{flalign}
+\begin{split}
+    \goI&=q^{m+n} \left(q a\right)^{\frac{3}{2}}\\
+    & =q^{m+n} q^{\frac{3}{2}} a^{\frac{3}{2}} \\
+    &= q^{m+n+\frac{3}{2}} a^{\frac{3}{2}} \\
+    &= q^{\frac{2m+2n+3}{2}} a^{\frac{3}{2}}
+\end{split}
+\end{flalign}
+
+\begin{flalign}
+    \goF=\frac{\goJ}{e}
+\end{flalign}
+
+\begin{flalign}
+    \begin{split}
+        \goJ&=\sqrt{q a} \\
+        &=\left(q a\right)^{\frac{1}{2}} \\
+        & = q^{\frac{1}{2}} a^{\frac{1}{2}}
+    \end{split}
+\end{flalign}
+
+\begin{flalign}
+\begin{split}
+        \goF & =\frac{\goJ}{e} \\
+        & =q^{\frac{1}{2}} \frac{a^{\frac{1}{2}}}{e}
+\end{split}
+\end{flalign}
+
+\begin{flalign}
+    \goG=\frac{\goK}{b c d e}
+\end{flalign}
+
+\begin{flalign}
+    \goK=q^{m+n+2} a^2
+\end{flalign}
+
+
+
+\subsubsection{\dsL}
+
+\begin{flalign}
+    \dsL =\left(\frac{\goL}{b c d e};q\right)_{2j}
+\end{flalign}
+
+
+\begin{flalign}
+\begin{split}
+    \goL&=q^{2m+2n+\frac{3}{2}} a^{\frac{5}{2}} \\
+    & = q^{\frac{4m+4n+3}{2}} a^{\frac{5}{2}}
+\end{split}
+\end{flalign}
+
+\subsubsection{\dsM}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 
 \end{document}
-
-
 
 
