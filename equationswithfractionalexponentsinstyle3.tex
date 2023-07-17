@@ -37,16 +37,18 @@
 \maketitle
 
 \section{Introduction}
-
-\section{equation 1}
 \begin{flalign}
-&\Whyp{6}{5}{a}{b,c,d}{q,z}=\frac{\left(q,{\big(\frac{bcdz}{qa}\big)}^2,qa,\frac{(qa)^{3/2}}{bcd};q\right)_{\infty}}{2 \pi  \left(f,\frac{q}{f},\frac{(qa)^{3/2}f}{bcdz},\frac{qbcdz}{(qa)^{3/2}f},\frac{(bcdz)^2}{qa^2},\frac{qa}{d},\frac{q^{3/2}a^{3/2}}{bc};q\right)_{\infty}} 
-\nonumber && \\
-& \times\sum_{j=0}^{\infty }q^{\frac{1}{2} (j-1)j}\left(-\frac{qaf}{d}\right)^j\frac{\left(\frac{q^{3/2}a^{3/2}}{bc};q\right)_{2 j}\left(\frac{\sqrt{q}a^{3/2}}{bc},\frac{\sqrt{qa}}{b},\frac{\sqrt{qa}}{c},\frac{qa}{bc},d;q\right)_{j}}{\left(\frac{\sqrt{q}a^{3/2}}{bc};q\right)_{2 j}\left(q,\frac{qa}{b},\frac{qa}{c},\sqrt{qa},\frac{(qa)^{3/2}}{bcd};q\right)_{j}}
-\nonumber && \\
-&\times\int _{-\pi }^{\pi }\frac{\left(\frac{q^{\frac{3}{4}+\frac{j}{2}}f\rho \sqrt{\frac{a^{3/2}}{bcdz}}}{g},\frac{q^{-\frac{j}{2}+\frac{1}{4}}\rho\sqrt{\frac{bcdz}{a^{3/2}}}}{fg},\frac{q^{\frac{j}{2}+\frac{3}{4}}fg\sqrt{\frac{a^{3/2}}{bcdz}}}{\rho},\frac{q^{-\frac{j}{2}+\frac{1}{4}}g\sqrt{\frac{bcdz}{a^{3/2}}}}{f\rho },\frac{q^{\frac{j}{2}+\frac{1}{4}}g\sqrt{\frac{\sqrt{a}bcz}{d}}}{\rho},\frac{q^{\frac{j}{2}-\frac{1}{4}}g(bcdz)^{3/2}}{a^{5/4}\rho },\frac{q^{\frac{3j}{2}+\frac{3}{4}}g\sqrt{\frac{a^{3/2}dz}{bc}}}{\rho };q\right)_{\infty}}{\left(\frac{q^{\frac{j}{2}+\frac{3}{4}}\rho \sqrt{\frac{a^{3/2}}{bcdz}}}{g},\frac{\rho\sqrt{\frac{bcdz}{a^{3/2}}}}{q^{\frac{j}{2}+\frac{3}{4}}g},\frac{q^{\frac{j}{2}+\frac{1}{4}}g\sqrt{bcdz}}{a^{1/4}\rho},\pm \frac{q^{\frac{j}{2}-\frac{1}{4}}g\sqrt{bcdz}}{a^{1/4}\rho },-\frac{q^{\frac{j}{2}+\frac{1}{4}}g\sqrt{bcdz}}{a^{1/4}\rho},\frac{q^{\frac{j}{2}+\frac{3}{4}}g\sqrt{\frac{a^{3/2}z}{bcd}}}{\rho };q\right)_{\infty}} \,{\mathrm d}\zeta &&
+    &\Whyp{6}{5}{a}{b,c,d}{q,z}=\frac{\left(q, q^{-2} \left(\frac{b c d z}{a}\right)^{2},q a, q^{\frac{3}{2}} \frac{ a^{\frac{3}{2}} }{b c d};q\right)_{\infty}}{2\pi \left(f,q \frac{1}{f} , q^{\frac{3}{2}} \frac{a^{\frac{3}{2}} f}{b c d z}, q^{-\frac{1}{2} } \frac{b c d z}{a^{\frac{3}{2}} f} , q^{-1} \left(\frac{b c d z}{a}\right)^2, q \frac{a}{d}, q^{\frac{3}{2}} \frac{a^{\frac{3}{2}}}{b c};q \right)_{\infty}}\nonumber && \\
+    &  \times \sum_{j=0}^{\infty} q^{\frac{j (j+1)}{2}} \frac{(-1)^j  (a f)^j \left(q^{\frac{3}{2}}\frac{a^{\frac{3}{2}}}{b c};q\right)_{2 j} \left( \sqrt{q} \frac{a^{\frac{3}{2}}}{b c}, \sqrt{q} \frac{\sqrt{a}}{b}, \sqrt{q} \frac{ \sqrt{a} }{c},   q \frac{a} { b c} , d 
+ ;q \right)_j}{d^j \left(\sqrt{q} \frac{a^{\frac{3}{2}}}{b c} ; q \right)_{2j} \left(q,q \frac{a}{b} ,q \frac{a}{c},
+ \sqrt{q a}, q^{\frac{3}{2}} \frac{a^{\frac{3}{2}}}{b c d} \right)_j }\nonumber && \\
+    &  \times 
+    \int_{-\pi}^{\pi} \frac{\left( 
+ q^{\frac{\left(2j+3\right)}{4} } \frac{a^{\frac{3}{4} }f \rho}{\sqrt{b c d z} g}, q^{\frac{\left(-2j+1\right)}{4} }\frac{\sqrt{b c d z} \rho}{a^{\frac{3}{4}} f g}, q^{\frac{\left(2j+3\right)}{4} } \frac{a^{\frac{3}{4}} f g}{\sqrt{b c d z} \rho} , \frac{}{} ,  q^{\frac{\left(-2j+1\right)}{4} }\frac{\sqrt{b c d z} \rho}{a^{\frac{3}{4}} f g},  q^{\frac{\left(2j+1\right)}{4} } \frac{a^{\frac{1}{4}} \sqrt{b c z} g}{\sqrt{d} \rho}, q^{\frac{\left(2j-1\right)}{4}} \frac{ \left(b c d z\right)^{\frac{3}{2}} g} {a^{\frac{5}{4}} \rho} ,  q^{\frac{3}{4}\left(2j+1\right)}\frac{a^{\frac{3}{4}} \sqrt{d z} g}{\sqrt{b c}\rho };q\right)_{\infty}}{\left( q^{\frac{\left(2j+3\right)}{4} } \frac{a^{\frac{3}{4} }f \rho}{\sqrt{b c d z} g},  q^{\frac{\left(2j+3\right)}{4} } \frac{\sqrt{b c d z} \rho}{a^{\frac{3}{4}}}g,  q^{\frac{\left(2j+1\right)}{4} } \frac{\sqrt{b c d z} g}{a^{\frac{1}{4}} \rho},
+ \pm q^{\frac{\left(2j+1\right)}{4} } \frac{g\sqrt{b c d z}}{a^{\frac{1}{4}} \rho},- q^{\frac{\left(2j+1\right)}{4} } \frac{g \sqrt{b c d z}}{a^{\frac{1}{4}} \rho},  q^{\frac{\left(3g+2j\right)}{4} }\frac{a^{\frac{3}{4}}  \sqrt{z}}{\sqrt{b c d}\rho}
+ ;q\right)_{\infty}} 
+    &&
 \end{flalign}
-
 \section{equation 2}
 \begin{flalign}
 &\Whyp{8}{7}{a}{b,c,d,e,f}{q,z}=\sum_{n=0}^{\infty }\left(\frac{bcz}{\sqrt{qa}}\right)^n\frac{\left(qa;q\right)_{2 n}\left(\frac{\sqrt{q}a^{3/2}}{bc},\frac{\sqrt{qa}}{b},\frac{\sqrt{qa}}{c},\frac{qa}{bc},d,e,f;q\right)_{n}
