@@ -1,0 +1,50 @@
+\documentclass[fleqn]{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage[a3paper]{geometry}
+\usepackage{color}
+\usepackage{amsmath}
+
+\counterwithin*{equation}{section}
+\title{manual translation}
+\author{Peter Burbery}
+\date{June 2023}
+
+\newcommand{\Whyp}[5]{\,\mbox{}_{#1}W_{#2}\!\left({#3};{#4};{#5}\right)}
+
+\newcommand{\qhyp}[5]{\,\mbox{}_{#1}\phi_{#2}\!\left(
+\begin{array}{c}{#3}\\[0.10cm]{#4}\end{array};{#5}\right)}
+\newcommand{\qphyp}[6]{\,{}_{#1}\phi_{{#2}}^{{#3}}\!\left(
+\begin{array}{c}{#4}\\[0.10cm] {#5}\end{array};#6\right)}
+\newcommand{\qPhihyp}[5]{\Phi{}_{#1}^{#2}\!\left[
+\begin{array}{c}{#3}\\ {#4}\end{array};#5\right]}
+\newcommand{\Kampe}[5]{F_{#1}^{#2}\!\left[
+\begin{array}{c}{#3}\\ {#4}\end{array};#5\right]}
+\newcommand{\hyp}[5]{\,\mbox{}_{#1}F_{#2}\!\left(
+\begin{array}{c}{#3}\\ {#4}\end{array};#5\right)}
+
+
+\newcommand\moro[1]{{\textcolor{blue}{#1}}}
+\newcommand\moqo[1]{{\textcolor{green!55!black}{#1}}}
+\newcommand\soro[1]{{\textcolor{red!40!blue}{\sout #1}}}
+\newcommand\noro[1]{{\textcolor{red}{#1}}}
+\newcommand\poro[1]{{\textcolor{purple}{#1}}}
+\newcommand\doro[1]{{\textcolor{darkgray}{#1}}}
+\newcommand\boro[1]{{\textcolor{black}{#1}}}
+
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+\section{equation 5}
+\begin{flalign}
+&\Whyp{12}{11}{a}{b,c,d,e,f,g,h,i,j}{q,z}=\qhyp{12}{11}{a,\pm q\sqrt{a},b,c,d,e,f,g,h,i,j}{\pm \sqrt{a},q \frac{a}{b},q \frac{a}{c},q \frac{a}{d},q \frac{a}{e},q \frac{a}{f},q \frac{a}{g},q \frac{a}{h},q \frac{a}{i},q \frac{a}{j}}{q,z}
+&&
+\end{flalign}
+\end{document}
+
+
+
+
