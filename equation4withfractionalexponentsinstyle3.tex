@@ -1,6 +1,6 @@
 \documentclass[fleqn]{article}
 \usepackage{graphicx} % Required for inserting images
-\usepackage[a3paper]{geometry}
+%\usepackage[a4paper]{geometry}
 \usepackage{color}
 \usepackage{amsmath}
 \usepackage{ amssymb}
@@ -237,7 +237,10 @@ I think I prefer the form \( q^{\frac{-n}{2}} \left( b c z\right)^n a^{\frac{-n}
     \dsR=\left(\dsZ;\scA ,\scB, \scC,d,e,f; q\right)_n
 \end{flalign}
 \begin{flalign}
-    \dsZ=q^{\frac{1}{2}}\frac{a^{\frac{3}{2}}}{b c}=\sqrt{q} \frac{a^{\frac{3}{2}}}{b c}
+\begin{split}
+      \dsZ &=q^{\frac{1}{2}}\frac{a^{\frac{3}{2}}}{b c}\\
+      &=\sqrt{q} \frac{a^{\frac{3}{2}}}{b c}  
+\end{split}
 \end{flalign}
 
 \begin{flalign}
@@ -255,7 +258,10 @@ I think I prefer the form \( q^{\frac{-n}{2}} \left( b c z\right)^n a^{\frac{-n}
 \subsubsection{\dsS and \scD}
 
 \begin{flalign}
-    \dsS=\left(\scD;q\right)_{2n}
+\begin{split}
+        \dsS & =\left(\scD;q\right)_{2n} \\
+        &= \left(\sqrt{q}\frac{a^{\frac{3}{2}}}{b c};q\right)_{2n}
+\end{split}
 \end{flalign}
 
 \begin{flalign}
@@ -265,7 +271,10 @@ I think I prefer the form \( q^{\frac{-n}{2}} \left( b c z\right)^n a^{\frac{-n}
 \subsubsection{\dsT, \scE, \scF, \scG, \scH, and \scI}
 
 \begin{flalign}
-    \dsT=\left(q, \sqrt{qa}, \scE,\scF,\scG,\scH, \scI ;q\right)_n
+\begin{split}
+        \dsT & =\left(q, \sqrt{qa}, \scE,\scF,\scG,\scH, \scI ;q\right)_n \\
+        & =\left(q, \sqrt{qa}, q \frac{a}{b},q \frac{a}{c},q \frac{a}{d},q \frac{a}{e}, q \frac{a}{f} ;q\right)_n
+\end{split}
 \end{flalign}
 
 \begin{flalign}
@@ -712,8 +721,16 @@ This is what we will be defining.
     \end{split}
 \end{flalign}
 
-
-
+\section{combining parts of equation 4}
+\begin{flalign}
+    \begin{split}
+        \Whyp{8}{7}{a}{b,c,d,e,f}{q,z}%\dsW%
+        &=\frac{\left( q, q^{-4} \left(\frac{b c d e f z}{a^2}\right)^2 ;q\right)_{\infty}}{2 \pi \left( f,\frac{q}{f} ,q^{-3} \left(\frac{b c d e f z}{a^2}\right)^2;q \right)_{\infty}} \\
+        &\times \sum_{n=0}^{\infty}
+{q^{\frac{-n}{2}} b^n c^n z^n a^{\frac{-n}{2}} \frac{\left(q a;q\right)_{2n} \left(q^{\frac{1}{2}}\frac{a^{\frac{3}{2}}}{b c};\scA ,\scB, \scC,d,e,f; q\right)_n}{\left(\sqrt{q}\frac{a^{\frac{3}{2}}}{b c};q\right)_{2n} \left(q, \sqrt{qa}, q \frac{a}{b},q \frac{a}{c},q \frac{a}{d},q \frac{a}{e}, q \frac{a}{f} ;q\right)_n}} \\
+& \times \sum_{m=0}^{\infty} \dsA^m \frac{\dsB \dsC \dsD}{\dsE \dsF \dsG} \sum_{j=0}^{\infty}q^\dsH \frac{ \dsI^j \dsJ \dsK}{\dsL \dsM} \int_{-\pi}^{\pi} \frac{\dsN}{\dsO} \,{\mathrm d}\zeta
+    \end{split}
+\end{flalign}
 
 
 
