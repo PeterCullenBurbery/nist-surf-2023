@@ -1,0 +1,65 @@
+\documentclass{article}
+\usepackage{amsmath}% For the equation* environment
+\begin{document}
+\section{First example}
+
+The well-known Pythagorean theorem \(x^2 + y^2 = z^2\) was proved to be invalid for other exponents, meaning the next equation has no integer solutions for \(n>2\):
+
+\[ x^n + y^n = z^n \]
+
+\section{Second example}
+
+This is a simple math expression \(\sqrt{x^2+1}\) inside text. 
+And this is also the same: 
+\begin{math}
+\sqrt{x^2+1}
+\end{math}
+but by using another command.
+
+This is a simple math expression without numbering
+\[\sqrt{x^2+1}\] 
+separated from text.
+
+This is also the same:
+\begin{displaymath}
+\sqrt{x^2+1}
+\end{displaymath}
+
+\ldots and this:
+\begin{equation*}
+\sqrt{x^2+1}
+\end{equation*}
+\section{Different ways of writing fractional exponents}
+\begin{flalign}
+q^{1/2}
+\end{flalign}
+\begin{flalign}
+q^{\frac{1}{2}}
+\end{flalign}
+It seems that the way of writing the exponent with frac takes up less horizontal space than writing the fraction on one line without frac.
+Here is a more complicated example
+\begin{flalign}
+    q^{1/4\left(2j+1\right)}
+\end{flalign}
+\begin{flalign}
+    q^{\frac{1}{4}\left(2j+1\right)}
+\end{flalign}
+
+\begin{flalign}
+    q^{\frac{\left(2j+1\right)}{4}}
+\end{flalign}
+It seems the most compact way is the third way.
+\subsection{coefficient in numerator not 1}
+Here is another example where there is a coefficient in the numerator that is not 1.
+\begin{flalign}
+    q^{3/4\left(2j+1\right)}
+\end{flalign}
+\begin{flalign}
+    q^{\frac{3}{4}\left(2j+1\right)}
+\end{flalign}
+
+\begin{flalign}
+    q^{\frac{3\left(2j+1\right)}{4}}
+\end{flalign}
+Again, it seems the most compact representation is the third one.
+\end{document}

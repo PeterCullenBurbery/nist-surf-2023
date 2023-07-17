@@ -1,0 +1,64 @@
+\documentclass[fleqn]{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage[a2paper]{geometry}
+\usepackage{color}
+\usepackage{amsmath}
+
+\counterwithin*{equation}{section}
+\title{manual translation}
+\author{Peter Burbery}
+\date{June 2023}
+
+\newcommand{\Whyp}[5]{\,\mbox{}_{#1}W_{#2}\!\left({#3};{#4};{#5}\right)}
+
+\newcommand{\qhyp}[5]{\,\mbox{}_{#1}\phi_{#2}\!\left(
+\begin{array}{c}{#3}\\[0.10cm]{#4}\end{array};{#5}\right)}
+\newcommand{\qphyp}[6]{\,{}_{#1}\phi_{{#2}}^{{#3}}\!\left(
+\begin{array}{c}{#4}\\[0.10cm] {#5}\end{array};#6\right)}
+\newcommand{\qPhihyp}[5]{\Phi{}_{#1}^{#2}\!\left[
+\begin{array}{c}{#3}\\ {#4}\end{array};#5\right]}
+\newcommand{\Kampe}[5]{F_{#1}^{#2}\!\left[
+\begin{array}{c}{#3}\\ {#4}\end{array};#5\right]}
+\newcommand{\hyp}[5]{\,\mbox{}_{#1}F_{#2}\!\left(
+\begin{array}{c}{#3}\\ {#4}\end{array};#5\right)}
+
+
+\newcommand\moro[1]{{\textcolor{blue}{#1}}}
+\newcommand\moqo[1]{{\textcolor{green!55!black}{#1}}}
+\newcommand\soro[1]{{\textcolor{red!40!blue}{\sout #1}}}
+\newcommand\noro[1]{{\textcolor{red}{#1}}}
+\newcommand\poro[1]{{\textcolor{purple}{#1}}}
+\newcommand\doro[1]{{\textcolor{darkgray}{#1}}}
+\newcommand\boro[1]{{\textcolor{black}{#1}}}
+
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+
+\begin{flalign}
+    &\Whyp{6}{5}{a}{b,c,d}{q,z}=\frac{\left(q, q^{-2} \left(\frac{b c d z}{a}\right)^{2},q a, q^{\frac{3}{2}} \frac{ a^{\frac{3}{2}} }{b c d};q\right)_{\infty}}{2\pi \left(f,q \frac{1}{f} , q^{\frac{3}{2}} \frac{a^{\frac{3}{2}} f}{b c d z}, q^{-\frac{1}{2} } \frac{b c d z}{a^{\frac{3}{2}} f} , q^{-1} \left(\frac{b c d z}{a}\right)^2, q \frac{a}{d}, q^{\frac{3}{2}} \frac{a^{\frac{3}{2}}}{b c};q \right)_{\infty}}\nonumber && \\
+    &  \times \sum_{j=0}^{\infty} q^{\frac{j (j+1)}{2}} \frac{(-1)^j  (a f)^j \left(q^{\frac{3}{2}}\frac{a^{\frac{3}{2}}}{b c};q\right)_{2 j} \left( \sqrt{q} \frac{a^{\frac{3}{2}}}{b c}, \sqrt{q} \frac{\sqrt{a}}{b}, \sqrt{q} \frac{ \sqrt{a} }{c},   q \frac{a} { b c} , d 
+ ;q \right)_j}{d^j \left(\sqrt{q} \frac{a^{\frac{3}{2}}}{b c} ; q \right)_{2j} \left(q,q \frac{a}{b} ,q \frac{a}{c},
+ \sqrt{q a}, q^{\frac{3}{2}} \frac{a^{\frac{3}{2}}}{b c d} \right)_j }\nonumber && \\
+    &  \times 
+    \int_{-\pi}^{\pi} \frac{\left( 
+ q^{\frac{\left(2j+3\right)}{4} } \frac{a^{\frac{3}{4} }f \rho}{\sqrt{b c d z} g}, q^{\frac{\left(-2j+1\right)}{4} }\frac{\sqrt{b c d z} \rho}{a^{\frac{3}{4}} f g}, q^{\frac{\left(2j+3\right)}{4} } \frac{a^{\frac{3}{4}} f g}{\sqrt{b c d z} \rho} , \frac{}{} ,  q^{\frac{\left(-2j+1\right)}{4} }\frac{\sqrt{b c d z} \rho}{a^{\frac{3}{4}} f g},  q^{\frac{\left(2j+1\right)}{4} } \frac{a^{\frac{1}{4}} \sqrt{b c z} g}{\sqrt{d} \rho}, q^{\frac{\left(2j-1\right)}{4}} \frac{ \left(b c d z\right)^{\frac{3}{2}} g} {a^{\frac{5}{4}} \rho} ,  q^{\frac{3}{4}\left(2j+1\right)}\frac{a^{\frac{3}{4}} \sqrt{d z} g}{\sqrt{b c}\rho };q\right)_{\infty}}{\left( q^{\frac{\left(2j+3\right)}{4} } \frac{a^{\frac{3}{4} }f \rho}{\sqrt{b c d z} g},  q^{\frac{\left(2j+3\right)}{4} } \frac{\sqrt{b c d z} \rho}{a^{\frac{3}{4}}}g,  q^{\frac{\left(2j+1\right)}{4} } \frac{\sqrt{b c d z} g}{a^{\frac{1}{4}} \rho},
+ \pm q^{\frac{\left(2j+1\right)}{4} } \frac{g\sqrt{b c d z}}{a^{\frac{1}{4}} \rho},- q^{\frac{\left(2j+1\right)}{4} } \frac{g \sqrt{b c d z}}{a^{\frac{1}{4}} \rho},  q^{\frac{\left(3g+2j\right)}{4} }\frac{a^{\frac{3}{4}}  \sqrt{z}}{\sqrt{b c d}\rho}
+ ;q\right)_{\infty}} 
+    &&
+\end{flalign}
+\section{last fraction in QPhI in the denominator of integrand}
+\begin{flalign}
+    \frac{q^{\frac{j}{2}+\frac{3}{4}g} \sqrt{\frac{a^{\frac{3}{2}} z}{b c d}}}{\rho}=\frac{a^{\frac{3}{4}}  q^{\frac{\left(3g+2j\right)}{4} } \sqrt{z}}{\sqrt{b c d}\rho}= q^{\frac{\left(3g+2j\right)}{4} }\frac{a^{\frac{3}{4}}  \sqrt{z}}{\sqrt{b c d}\rho}
+\end{flalign}
+
+
+\end{document}
+
+
+
+
